@@ -1,0 +1,229 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.header {
+  text-align: left; 
+ }
+
+ .return-btn {
+  display: inline-block;
+  border: 1px solid;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.return-btn::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -100%; /* Modificado para que el pseudo-elemento esté fuera del botón */
+  width: 200%; /* Modificado para cubrir completamente el botón */
+  height: 100%;
+  background-color: #4c9aff;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(0.5);
+}
+
+.return-btn:hover {
+  transform: scale(1.2);
+}
+
+.return-btn:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.return-btn .imgFlecha {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative; /* Agregado para que la imagen se muestre por encima del pseudo-elemento */
+  z-index: 2; /* Agregado para establecer la imagen por encima del pseudo-elemento */
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin: 0 auto;
+  margin-bottom:10px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+p span {
+  font-weight: bold;
+  color: #4c9aff;
+  font-size: 24px;
+}
+
+
+
+form {
+  margin-top: 20px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.label {
+  font-weight: bold;
+  color: #313131; 
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.unitContainer{
+  background-color: rebeccapurple;
+}
+.unit {
+  margin-left: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 13px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #0084ff;
+}
+
+.selected-temperament {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; 
+}
+
+.delete-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.delete-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-size: cover;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.x{
+  width: 32px; 
+  height: 32px; 
+  margin-left: 14px; 
+}
+
+.submit-btn {
+  background-color: #333;
+  color: white;
+  padding: 14px 60px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background-color: #0084ff;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 23px;
+  color: #333;
+}
+
+.footer img {
+  width: 26px;
+  margin-left: 18px;
+}
+
+.footer img:hover {
+  filter: grayscale(100%) brightness(1.5) hue-rotate(10deg);
+}
+
+
+

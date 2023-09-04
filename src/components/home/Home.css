@@ -1,0 +1,54 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card-wrapper {
+  width: 23%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.mostrarButtonHome {
+  padding: 10px 20px;
+  background-color: #0084ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  margin-top: 37px;
+  margin-left: 112px;
+  font-family: Montserrat;
+}
+
+.filtrosHome {
+  position: absolute;
+  top: 211px;
+  left: 239px;
+  margin-top: 20px;
+}
+
+.headerFilteredHome {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+  font-family: Montserrat;
+}
+
+.filterOneHome {
+  font-weight: bold;
+  color: #0084ff;
+}
+
+.filterOneHome[value="creatividad"],
+.filterOneHome[value="equilibrio"] {
+  font-weight: bold;
+  color: #0084ff;
+  font-family: "Helvetica", Arial, sans-serif;
+}

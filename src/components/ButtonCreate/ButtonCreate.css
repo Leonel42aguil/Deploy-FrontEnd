@@ -1,0 +1,29 @@
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-button {
+  background-color: #808080;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.secondary-button {
+  background-color: #808080;
+  color: white;
+  padding: 11px 21px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+

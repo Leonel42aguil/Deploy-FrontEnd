@@ -1,0 +1,17 @@
+.boton-wsp {
+    text-align: center;
+  }
+  
+  .wsp-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .wsp-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+  }
+  

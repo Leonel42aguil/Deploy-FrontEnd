@@ -1,0 +1,48 @@
+.mostrarButton {
+    padding: 10px 20px;
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right; /* Alinea el botón a la derecha */
+    margin-top: 37px; /* Espacio superior */
+    margin-right: 57px; /* Espacio derecho */
+    font-family: Montserrat;
+  }
+  
+  .filtros {
+    position: absolute; /* Posición absoluta */
+    top: 211px; /* Ajusta la posición vertical */
+    right: 180px; /* Ajusta la posición horizontal */
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .headerFiltered {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+    font-family: Montserrat;
+  }
+  
+  .filterOne {
+    font-weight: bold;
+    color: #0084ff;
+  }
+  
+  .filterOne[value="creatividad"] {
+    font-weight: bold;
+    color: #0084ff;
+    font-family: "Helvetica", Arial, sans-serif;
+  }
+  
+  .filterOne[value="equilibrio"] {
+    font-weight: bold;
+    color: #0084ff;
+    font-family: "Helvetica", Arial, sans-serif;
+  }
+  
