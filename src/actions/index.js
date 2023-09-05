@@ -6,7 +6,7 @@ import axios from "axios"
 export function getRaza(name) {
   return async function(dispatch) {
     try {
-      let json = (await axios(`http://localhost:3001/dogs?name=${name}`)).data;
+      let json = (await axios(`https://servidor-back-pi.onrender.com/dogs?name=${name}`)).data;
       // let json = (await axios(`/dogs?name=${name}`)).data;
 
       if (json.length > 1) {
@@ -44,7 +44,7 @@ export function getRaza(name) {
 
 export function getDogs(){
     return async function(dispatch) {
-        var json = await axios.get('http://localhost:3001/dogs')
+        var json = await axios.get('https://servidor-back-pi.onrender.com/dogs')
         // var json = await axios.get('/dogs')
         return dispatch({
             type: "GET_DOGS",
@@ -78,7 +78,7 @@ export function ordenByAplhabetical(payload) {
 
 export function getTemperaments() {
   return async function(dispatch){
-    var info = await axios('http://localhost:3001/temperaments') 
+    var info = await axios('https://servidor-back-pi.onrender.com/temperaments') 
     // var info = await axios('/temperaments') 
     return dispatch({type: 'GET_TEMPERAMENTS', payload: info.data})
   }
@@ -108,7 +108,7 @@ export function filterCreated(payload){
 export function postDogs (payload){
   return async function(dispatch){
     try {
-       const response = await axios.post('http://localhost:3001/dogs', payload)
+       const response = await axios.post('https://servidor-back-pi.onrender.com/dogs', payload)
       //  const response = await axios.post('/dogs', payload)
       //  alert("Gracias por proporcionar toda la información necesaria sobre raza creada!✅")
        alert("Thank you for providing all the necessary information about breed created!✅")
@@ -139,7 +139,7 @@ export const getDetail = (id) => {
     try {
       // let details = (await axios(`/dogs/${id}`)).data;
 
-      let details = (await axios(`http://localhost:3001/dogs/${id}`)).data;
+      let details = (await axios(`https://servidor-back-pi.onrender.com/dogs/${id}`)).data;
       // let details = await axios.get('http://localhost:3001/dogs' + id)
       return dispatch({
         type: 'GET_DETAILS',
